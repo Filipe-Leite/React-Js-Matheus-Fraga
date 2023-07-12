@@ -32,7 +32,7 @@
 
     </body>
 </html> -->
-
+<!-- 
 <!DOCTYPE html>
 <html>
     <head>
@@ -51,8 +51,47 @@
         <br/><br/>
 
         <button onclick="document.getElementById('area').innerHTML =
-        prompt('Qual seu nome?');   ">Entrar</button>
+        'Bem vindo ' +  prompt('Qual seu nome?');   ">Entrar</button>
 
+        <br/><br/>
+
+        <div id="area">
+            Qual o nome do botão?
+        </div>
+
+        <button onclick="this.innerHTML = prompt('Qual nome do botão'); ">
+        Qual meu nome?</button>
+
+
+    </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 9</title>
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="area">
+            Bem vindo ...
+        </div>
+
+        <br/><br/>
+
+        <button onclick="entrar()">Entrar</button>
+
+        <div id="area2">
+            Bem vindo ...
+        </div>
+
+        <br/><br/>
+
+        <button onclick="entrar2('Lucas')">Entrar</button>
 
     </body>
 </html>
